@@ -9,8 +9,24 @@
     bottom: 10px;
     right: 10px;
 }
-
-.text {
-    text-align: center;
+.winter i{
+   color:darkblue; 
 }
+.summer i{
+    color: rgb(251, 221, 145);
+}
+.winter {
+    background-color: aliceblue; 
+}
+.summer {
+    background-color: orange;
+}
+.season-display{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+}
+
 

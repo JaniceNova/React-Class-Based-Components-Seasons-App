@@ -29,7 +29,7 @@ const SeasonDisplay = (props) => {
    
     
     return(
-        <div>
+        <div className= {`season-display ${season}`}>
         <i  className={`${iconName} icon massive icon-left`} />
         <div><h1 className='text'>{text}</h1></div>
         <i  className={`${iconName} icon massive icon-right`} />
