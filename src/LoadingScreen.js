@@ -14,4 +14,7 @@ const LoadingScreen = (props) => {
     );
 };
 
+LoadingScreen.defaultProps = {
+    message: 'Loading...'
+};
 export default LoadingScreen;
