@@ -7,7 +7,7 @@ const LoadingScreen = (props) => {
     return(
         <div className="ui segment loadingScreen">
         <div className="ui active dimmer">
-            <div className="ui text loader">Loading</div>
+            <div className="ui text loader">{props.message}</div>
         </div>
              <p></p>
         </div>

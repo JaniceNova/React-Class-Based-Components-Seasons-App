@@ -39,7 +39,7 @@ class App extends React.Component {
        }
        else {
         return( 
-           <LoadingScreen />
+           <LoadingScreen message="Please accept location request" />
         );
        }
        
