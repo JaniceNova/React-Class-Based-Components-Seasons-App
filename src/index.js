@@ -23,8 +23,8 @@ class App extends React.Component {
     }
     //react says we have to define reder!!
     //render method gets called all the dang time
-    render(){
-       if(this.state.errorMessage &&!this.state.lat){
+renderContent (props){
+    if(this.state.errorMessage &&!this.state.lat){
         return( 
         <div>
         Error: {this.state.errorMessage}
@@ -42,6 +42,13 @@ class App extends React.Component {
            <LoadingScreen message="Please accept location request" />
         );
        }
+}
+
+    render(){
+     
+        return( 
+            <div>{this.renderContent()}</div>
+        );
        
 }
 }
