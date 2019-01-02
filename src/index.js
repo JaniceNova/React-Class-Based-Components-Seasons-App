@@ -39,7 +39,12 @@ class App extends React.Component {
        }
        else {
         return( 
-           <div>Loading...</div>
+            <div className="ui segment loadingScreen">
+                <div className="ui active dimmer">
+                    <div className="ui text loader">Loading</div>
+                </div>
+                     <p></p>
+             </div>
         );
        }
        
