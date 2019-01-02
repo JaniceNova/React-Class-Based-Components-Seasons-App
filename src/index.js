@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import SeasonDisplay from './SeasonDisplay';
-
+import LoadingScreen from './LoadingScreen';
 
 class App extends React.Component {
    //anytime we update our state object our render method runs
@@ -39,12 +39,7 @@ class App extends React.Component {
        }
        else {
         return( 
-            <div className="ui segment loadingScreen">
-                <div className="ui active dimmer">
-                    <div className="ui text loader">Loading</div>
-                </div>
-                     <p></p>
-             </div>
+           <LoadingScreen />
         );
        }
        
